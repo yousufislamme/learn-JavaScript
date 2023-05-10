@@ -1,7 +1,12 @@
-document.getElementById('mySearch').addEventListener('click', function () {
-   const myInput = document.getElementById('myInput');
-   const myText = document.getElementById('myText');
+document.getElementById('post-btn').addEventListener('click', function () {
+   const boxContainer = document.getElementById('box-container');
+   const inputFiled = document.getElementById('input-filed');
+   const p = document.createElement('p');
 
-   myText.innerHTML = myInput.value;
-   myInput.value = '';
+   p.innerText = inputFiled.value;
+
+   boxContainer.appendChild(p);
+
+   inputFiled.value = '';
+
 });
